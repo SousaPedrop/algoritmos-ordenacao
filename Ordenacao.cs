@@ -7,7 +7,7 @@ namespace algoritmos_ordenacao
 {
     public class Ordenacao
     {
-        static public void proprio(List<int> lista)
+        static public void Proprio(List<int> lista)
         {
             int aux;
             for (int i = 0; i < lista.Count; i++)
@@ -35,14 +35,20 @@ namespace algoritmos_ordenacao
             }
         }
         
-        static public void Bolha(List<int> lista)
+        static public void Bolha(int[] lista)
         {
-            int itera = 0;
             int aux;
             int num = 0;
-            for (int i = 0; i < lista.Count; i++)
+
+            Console.Write("Lista no início: ");
+            for (int i = 0; i < lista.Length; i++)
             {
-                while (num < lista.Count - 1)
+                Console.Write($" {lista[i]} ");
+            }
+
+            for (int i = 0; i < lista.Length; i++)
+            {
+                while (num < lista.Length - 1)
                 {
                     if (lista[num] > lista[num+1])
                     {
@@ -51,17 +57,59 @@ namespace algoritmos_ordenacao
                         lista[num] = aux;
                     }
                     num++;
-                    Console.Write(" -> Lista atual: ");
-                    itera++;
-                    foreach (var numero in lista)
-                    {
-                        Console.Write($" {numero},");
-                    }
-                    Console.Write($" itera: {itera}");
-                    Console.WriteLine();
                 }
                 num = 0;
             }
+            
+            Console.WriteLine();
+            Console.Write("Lista no fim: ");
+            for (int i = 0; i < lista.Length; i++)
+            {
+                Console.Write($" {lista[i]} ");
+            }
+        }
+
+        static public void Insercao(int[] lista)
+        {
+            int aux;
+            int j;
+
+            Console.Write("Lista no início: ");
+            for (int i = 0; i < lista.Length; i++)
+            {
+                Console.Write($" {lista[i]} ");
+            }
+
+            for (int i = 1; i < lista.Length; i++)
+            {
+                j = i - 1;
+                while (j >= 0)
+                {
+                    Console.Write("Lista atual: ");
+                    foreach (var numero in lista)
+                    {
+                        Console.Write($" {numero}");
+                    }
+                    Console.WriteLine();
+                    
+                    if (lista[j] > lista[i] )
+                    {
+                        aux = lista[j];
+                        lista[j] = lista[i];
+                        lista[i] = aux;
+                        i--;
+                    }
+                    j--;
+                }
+            }
+
+            Console.WriteLine();
+            Console.Write("Lista no fim: ");
+            for (int i = 0; i < lista.Length; i++)
+            {
+                Console.Write($" {lista[i]} ");
+            }
+
         }
     }
 }
