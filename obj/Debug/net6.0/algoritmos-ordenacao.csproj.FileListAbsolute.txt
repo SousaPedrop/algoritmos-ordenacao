@@ -1,0 +1,15 @@
+C:\Users\p\Desktop\algoritmos-ordenacao\bin\Debug\net6.0\algoritmos-ordenacao.exe
+C:\Users\p\Desktop\algoritmos-ordenacao\bin\Debug\net6.0\algoritmos-ordenacao.deps.json
+C:\Users\p\Desktop\algoritmos-ordenacao\bin\Debug\net6.0\algoritmos-ordenacao.runtimeconfig.json
+C:\Users\p\Desktop\algoritmos-ordenacao\bin\Debug\net6.0\algoritmos-ordenacao.dll
+C:\Users\p\Desktop\algoritmos-ordenacao\bin\Debug\net6.0\algoritmos-ordenacao.pdb
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.csproj.AssemblyReference.cache
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.AssemblyInfoInputs.cache
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.AssemblyInfo.cs
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.csproj.CoreCompileInputs.cache
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.dll
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\refint\algoritmos-ordenacao.dll
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.pdb
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\algoritmos-ordenacao.genruntimeconfig.cache
+C:\Users\p\Desktop\algoritmos-ordenacao\obj\Debug\net6.0\ref\algoritmos-ordenacao.dll
