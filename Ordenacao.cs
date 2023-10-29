@@ -24,7 +24,7 @@ namespace algoritmos_ordenacao
                         lista[j] = aux;
                         Console.WriteLine($"lista[{i}] agora é: {lista[i]}\nlista[{j}] agora é: {lista[j]}\n");
                     }
-                    
+
                     Console.WriteLine("Lista atual: ");
                     foreach (var numero in lista)
                     {
@@ -34,7 +34,7 @@ namespace algoritmos_ordenacao
                 }
             }
         }
-        
+
         static public void Bolha(int[] lista)
         {
             int aux;
@@ -50,17 +50,17 @@ namespace algoritmos_ordenacao
             {
                 while (num < lista.Length - 1)
                 {
-                    if (lista[num] > lista[num+1])
+                    if (lista[num] > lista[num + 1])
                     {
-                        aux = lista[num+1];
-                        lista[num+1] = lista[num];
+                        aux = lista[num + 1];
+                        lista[num + 1] = lista[num];
                         lista[num] = aux;
                     }
                     num++;
                 }
                 num = 0;
             }
-            
+
             Console.WriteLine();
             Console.Write("Lista no fim: ");
             for (int i = 0; i < lista.Length; i++)
@@ -71,7 +71,7 @@ namespace algoritmos_ordenacao
 
         static public void Insercao(int[] lista)
         {
-            int aux;
+            int aux, chave;
             int j;
 
             Console.Write("Lista no início: ");
@@ -79,25 +79,29 @@ namespace algoritmos_ordenacao
             {
                 Console.Write($" {lista[i]} ");
             }
+            Console.WriteLine();
 
             for (int i = 1; i < lista.Length; i++)
             {
+                chave = lista[i];
                 j = i - 1;
+
+                Console.Write("Lista atual: ");
+                foreach (var numero in lista)
+                {
+                    Console.Write($" {numero}");
+                }
+                Console.WriteLine();
+                
                 while (j >= 0)
                 {
-                    Console.Write("Lista atual: ");
-                    foreach (var numero in lista)
+
+                    if (lista[j] > chave)
                     {
-                        Console.Write($" {numero}");
-                    }
-                    Console.WriteLine();
-                    
-                    if (lista[j] > lista[i] )
-                    {
-                        aux = lista[j];
-                        lista[j] = lista[i];
-                        lista[i] = aux;
-                        i--;
+                        aux = chave;
+                        lista[j + 1] = lista[j];
+                        lista[j] = aux;
+                        // i--;s
                     }
                     j--;
                 }
