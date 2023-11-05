@@ -7,7 +7,7 @@ namespace algoritmos_ordenacao
 {
     public class Ordenacao
     {
-        static public void Proprio(List<int> lista)
+        static public void BolhaPropria(List<int> lista)
         {
             int aux;
             for (int i = 0; i < lista.Count; i++)
@@ -115,5 +115,56 @@ namespace algoritmos_ordenacao
             }
 
         }
+
+        static public void Selecao(int[] lista)
+        {
+            int chave, aux, posicaoMenor;
+
+            Console.Write("Lista no início: ");
+            for (int i = 0; i < lista.Length; i++)
+            {
+                Console.Write($" {lista[i]} ");
+            }
+            Console.WriteLine();
+
+            //Iniciando iteração do array
+            for(int i = 0; i < lista.Length; i++)
+            {
+                chave = lista[i];
+                posicaoMenor = i;
+                
+                Console.Write("Lista atual: ");
+                foreach (var numero in lista)
+                {
+                    Console.Write($" {numero}");
+                }
+                Console.WriteLine();
+                
+                //Escolhendo a chave (menor valor) e sua respectiva posicao.
+                for (int j = i; j < lista.Length; j++)
+                {
+                    if(chave > lista[j])
+                    {
+                        chave = lista[j];
+                        posicaoMenor = j;
+                    }
+                }
+                //Comparar se o menor valor esta no lugar errado
+                if(posicaoMenor != i)
+                {
+                    aux = lista[i];
+                    lista[i] = lista[posicaoMenor];
+                    lista[posicaoMenor] = aux;
+                }
+            }
+
+            Console.WriteLine();
+            Console.Write("Lista no fim: ");
+            for (int i = 0; i < lista.Length; i++)
+            {
+                Console.Write($" {lista[i]} ");
+            }
+        }
+
     }
 }
